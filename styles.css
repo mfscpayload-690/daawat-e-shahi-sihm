@@ -1,0 +1,418 @@
+/* ========================================
+   ROYAL MUGHAL MENU - CSS STYLESHEET
+   ======================================== */
+
+/* === ROOT VARIABLES === */
+:root {
+    /* Color Palette - Royal Mughal Theme */
+    --color-primary: #8B0000;        /* Deep burgundy */
+    --color-secondary: #DAA520;      /* Royal gold */
+    --color-accent: #2C1810;         /* Deep brown */
+    --color-text-dark: #1a1a1a;
+    --color-text-light: #4a4a4a;
+    --color-bg-main: #FFF8F0;        /* Warm ivory */
+    --color-bg-section: #FFFFFF;
+    --color-border: #DAA52033;       /* Gold with transparency */
+    
+    /* Typography */
+    --font-display: 'Playfair Display', serif;
+    --font-elegant: 'Cormorant Garamond', serif;
+    --font-body: 'Inter', sans-serif;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-xxl: 4rem;
+    
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(139, 0, 0, 0.08);
+    --shadow-md: 0 4px 16px rgba(139, 0, 0, 0.12);
+    --shadow-lg: 0 8px 24px rgba(139, 0, 0, 0.16);
+}
+
+/* === RESET & BASE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg-main);
+    color: var(--color-text-dark);
+    line-height: 1.7;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* === DECORATIVE BACKGROUND PATTERN === */
+.bg-pattern {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.03;
+    z-index: -1;
+    background-image: 
+        repeating-linear-gradient(45deg, var(--color-primary) 0, var(--color-primary) 1px, transparent 0, transparent 50%),
+        repeating-linear-gradient(-45deg, var(--color-primary) 0, var(--color-primary) 1px, transparent 0, transparent 50%);
+    background-size: 30px 30px;
+    pointer-events: none;
+}
+
+/* === HEADER === */
+.header {
+    text-align: center;
+    padding: var(--spacing-xxl) var(--spacing-md) var(--spacing-xl);
+    background: linear-gradient(135deg, var(--color-primary) 0%, #5a0000 100%);
+    color: var(--color-bg-main);
+    position: relative;
+    overflow: hidden;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></svg>');
+    background-size: 100px 100px;
+    pointer-events: none;
+}
+
+.ornament-top,
+.ornament-bottom,
+.ornament-footer {
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--color-secondary), transparent);
+    margin: var(--spacing-md) auto;
+    position: relative;
+}
+
+.ornament-top::before,
+.ornament-top::after,
+.ornament-bottom::before,
+.ornament-bottom::after,
+.ornament-footer::before,
+.ornament-footer::after {
+    content: '◆';
+    position: absolute;
+    color: var(--color-secondary);
+    font-size: 0.6rem;
+    top: -7px;
+}
+
+.ornament-top::before,
+.ornament-bottom::before,
+.ornament-footer::before {
+    left: -12px;
+}
+
+.ornament-top::after,
+.ornament-bottom::after,
+.ornament-footer::after {
+    right: -12px;
+}
+
+.main-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: var(--spacing-sm);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+}
+
+.subtitle {
+    font-family: var(--font-elegant);
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 3px;
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-secondary);
+}
+
+.tagline {
+    font-family: var(--font-body);
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    font-weight: 300;
+    letter-spacing: 2px;
+    opacity: 0.95;
+    margin-bottom: var(--spacing-lg);
+}
+
+.college-info {
+    margin-top: var(--spacing-lg);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    opacity: 0.9;
+    position: relative;
+    z-index: 1;
+}
+
+.college-info p {
+    margin: var(--spacing-xs) 0;
+}
+
+.college-name {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--color-secondary);
+    letter-spacing: 1px;
+}
+
+.location {
+    font-size: 0.85rem;
+    font-weight: 300;
+}
+
+/* === MAIN MENU CONTAINER === */
+.menu-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: var(--spacing-xl) var(--spacing-md);
+}
+
+/* === MENU SECTIONS === */
+.menu-section {
+    background: var(--color-bg-section);
+    margin-bottom: var(--spacing-xl);
+    padding: var(--spacing-lg) var(--spacing-md);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-border);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out forwards;
+    position: relative;
+}
+
+.menu-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-secondary), transparent);
+    opacity: 0.3;
+}
+
+/* Staggered animation delays */
+.menu-section:nth-child(1) { animation-delay: 0.1s; }
+.menu-section:nth-child(2) { animation-delay: 0.2s; }
+.menu-section:nth-child(3) { animation-delay: 0.3s; }
+.menu-section:nth-child(4) { animation-delay: 0.4s; }
+.menu-section:nth-child(5) { animation-delay: 0.5s; }
+.menu-section:nth-child(6) { animation-delay: 0.6s; }
+.menu-section:nth-child(7) { animation-delay: 0.7s; }
+.menu-section:nth-child(8) { animation-delay: 0.8s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* === SECTION HEADER === */
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.divider-line {
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+    max-width: 100px;
+}
+
+.section-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+    font-weight: 600;
+    color: var(--color-primary);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    position: relative;
+}
+
+.section-title::after {
+    content: '✦';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--color-secondary);
+    font-size: 0.6rem;
+}
+
+/* === SUBSECTIONS === */
+.subsection {
+    margin-bottom: var(--spacing-lg);
+}
+
+.subsection:last-child {
+    margin-bottom: 0;
+}
+
+.subsection-title {
+    font-family: var(--font-elegant);
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+    padding-left: var(--spacing-sm);
+    border-left: 3px solid var(--color-secondary);
+}
+
+/* === MENU ITEMS === */
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.menu-item {
+    padding: var(--spacing-md);
+    background: linear-gradient(to right, transparent, var(--color-bg-main), transparent);
+    border-radius: var(--radius-md);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.menu-item::before {
+    content: '❖';
+    position: absolute;
+    left: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-secondary);
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+    background: linear-gradient(to right, var(--color-bg-main), #fff9f3, var(--color-bg-main));
+    transform: translateX(8px);
+    padding-left: var(--spacing-lg);
+}
+
+.menu-item:hover::before {
+    opacity: 1;
+}
+
+.dish-name {
+    font-family: var(--font-elegant);
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-xs);
+    letter-spacing: 0.5px;
+}
+
+.dish-description {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+/* === FOOTER === */
+.footer {
+    text-align: center;
+    padding: var(--spacing-xl) var(--spacing-md);
+    background: linear-gradient(135deg, #2C1810 0%, #1a0f0a 100%);
+    color: var(--color-bg-main);
+    margin-top: var(--spacing-xxl);
+}
+
+.footer-text {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: var(--spacing-xs);
+}
+
+.footer-subtitle {
+    font-family: var(--font-elegant);
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--color-secondary);
+    letter-spacing: 1px;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (min-width: 768px) {
+    .menu-container {
+        padding: var(--spacing-xxl) var(--spacing-lg);
+    }
+    
+    .menu-section {
+        padding: var(--spacing-xl) var(--spacing-lg);
+    }
+    
+    .menu-item {
+        padding: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    .section-header {
+        gap: var(--spacing-sm);
+    }
+    
+    .divider-line {
+        max-width: 50px;
+    }
+    
+    .college-info {
+        font-size: 0.8rem;
+    }
+}
+
+/* === PRINT STYLES === */
+@media print {
+    body {
+        background: white;
+    }
+    
+    .bg-pattern {
+        display: none;
+    }
+    
+    .menu-section {
+        page-break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+}
