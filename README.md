@@ -4,7 +4,10 @@ A Royal Mughal-themed menu webpage for The State Institute of Hospitality Manage
 
 ## Live Site
 
-**[https://daawat-e-sahi.netlify.app](https://daawat-e-sahi.netlify.app)**
+| Platform | URL |
+|----------|-----|
+| **Netlify** | [https://daawat-e-sahi.netlify.app](https://daawat-e-sahi.netlify.app) |
+| **Vercel** | [https://daawat-e-shahi-sihm.vercel.app](https://daawat-e-shahi-sihm.vercel.app) |
 
 ## About
 
