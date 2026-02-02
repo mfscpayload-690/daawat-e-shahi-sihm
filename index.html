@@ -11,12 +11,24 @@
     <meta name="description"
         content="Experience Daawat-e-Shahi - A royal Mughal feast presented by The State Institute of Hospitality Management, Kozhikode, Kerala">
 
+    <!-- Theme Colors -->
+    <meta name="theme-color" content="#8B0000">
+    <meta name="msapplication-TileColor" content="#8B0000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
     <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="Daawat-e-Shahi | SIHM Kozhikode">
-    <meta property="og:description" content="Experience authentic Mughal cuisine presented by SIHM, Kozhikode">
+    <meta property="og:title" content="Daawat-e-Shahi | Royal Mughal Feast - SIHM Kozhikode">
+    <meta property="og:description" content="Experience authentic Mughal cuisine presented by The State Institute of Hospitality Management, Kozhikode. A royal dining experience featuring traditional dishes from Mughal royal kitchens.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://daawat-e-sahi.netlify.app">
     <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="Daawat-e-Shahi">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Daawat-e-Shahi | Royal Mughal Feast">
+    <meta name="twitter:description" content="Experience authentic Mughal cuisine presented by SIHM, Kozhikode">
 
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
@@ -27,6 +39,10 @@
     <link rel="icon" type="image/png" sizes="512x512" href="assets/android-chrome-512x512.png">
     <link rel="manifest" href="assets/site.webmanifest">
 
+    <!-- Performance: DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,24 +51,50 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Daawat-e-Shahi",
+      "description": "A royal Mughal feast presented by The State Institute of Hospitality Management, Kozhikode",
+      "servesCuisine": "Mughal Cuisine",
+      "provider": {
+        "@type": "EducationalOrganization",
+        "name": "The State Institute of Hospitality Management",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Varakkal Beach, West Hill",
+          "addressLocality": "Kozhikode",
+          "addressRegion": "Kerala",
+          "postalCode": "673005",
+          "addressCountry": "IN"
+        },
+        "email": "sihmcalicut@gmail.com",
+        "url": "https://sihmkerala.org/"
+      },
+      "url": "https://daawat-e-sahi.netlify.app"
+    }
+    </script>
 </head>
 
 <body>
     <!-- Decorative Background Pattern -->
-    <div class="bg-pattern"></div>
+    <div class="bg-pattern" aria-hidden="true"></div>
 
     <!-- Header -->
-    <header class="header">
+    <header class="header" role="banner">
         <!-- Mughal Arch Frame -->
-        <div class="arch-frame">
+        <div class="arch-frame" aria-hidden="true">
             <div class="arch-decoration"></div>
         </div>
         
         <!-- Floating Decorative Elements -->
-        <div class="header-particles"></div>
+        <div class="header-particles" aria-hidden="true"></div>
         
         <!-- Royal Crest -->
-        <div class="royal-crest">
+        <div class="royal-crest" aria-hidden="true">
             <span class="crest-symbol">☬</span>
         </div>
         
@@ -73,18 +115,18 @@
         
         <div class="college-info">
             <p class="presented-by">Presented by</p>
-            <p class="college-name"><a href="https://www.sihmkerala.com/" target="_blank" rel="noopener noreferrer"
+            <p class="college-name"><a href="https://sihmkerala.org/" target="_blank" rel="noopener noreferrer"
                     class="college-link">The State Institute of Hospitality Management</a></p>
             <p class="location">Varakkal Beach, West Hill, Kozhikode, Kerala</p>
         </div>
         <div class="ornament-bottom"></div>
         
         <!-- Bottom Arch Border -->
-        <div class="header-border-bottom"></div>
+        <div class="header-border-bottom" aria-hidden="true"></div>
     </header>
 
     <!-- Main Menu Container -->
-    <main class="menu-container">
+    <main class="menu-container" role="main" aria-label="Menu sections">
 
         <!-- Welcome Drink Section -->
         <section class="menu-section" data-section="welcome">
@@ -277,9 +319,9 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <!-- Royal Seal -->
-        <div class="royal-seal">
+        <div class="royal-seal" aria-hidden="true">
             <div class="seal-inner">
                 <span class="seal-symbol">❁</span>
             </div>
@@ -291,7 +333,7 @@
         <p class="footer-subtitle">Bon Appétit</p>
         
         <!-- Scroll End Decoration -->
-        <div class="scroll-end">
+        <div class="scroll-end" aria-hidden="true">
             <div class="scroll-flourish">
                 <span>❦</span>
                 <span class="scroll-line"></span>
@@ -306,7 +348,7 @@
                 <h3 class="footer-heading">About SIHM</h3>
                 <p class="footer-info">The State Institute of Hospitality Management, Kozhikode is a premier institution
                     dedicated to excellence in culinary arts and hospitality education.</p>
-                <a href="https://www.sihmkerala.com/" target="_blank" rel="noopener noreferrer"
+                <a href="https://sihmkerala.org/" target="_blank" rel="noopener noreferrer"
                     class="footer-link">Visit Our Website</a>
             </div>
 
