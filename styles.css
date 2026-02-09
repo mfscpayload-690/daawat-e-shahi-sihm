@@ -610,6 +610,10 @@ body::before {
     animation-delay: 0.8s;
 }
 
+.menu-section:nth-child(9) {
+    animation-delay: 0.9s;
+}
+
 @keyframes fadeInUp {
     to {
         opacity: 1;
