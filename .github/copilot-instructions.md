@@ -4,7 +4,7 @@
 
 A static single-page menu website showcasing Mughal cuisine for SIHM Kozhikode. Pure HTML/CSS/JS with no build tools or frameworks.
 
-**Live site:** https://daawat-e-sahi.netlify.app
+**Project status:** Archived (no active live deployment)
 
 ## Architecture
 
@@ -71,7 +71,7 @@ Wrap grouped items in `<div class="subsection">` with `<h3 class="subsection-tit
 
 ## Deployment
 
-Hosted on Netlify with automatic deploys. No build step required—push static files directly.
+No active deployment. This repository is maintained as an archived static reference project.
 
 ## When Adding New Menu Items
 

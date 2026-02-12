@@ -6,17 +6,22 @@
 
 *Presented by The State Institute of Hospitality Management, Kozhikode*
 
-[![Netlify Status](https://img.shields.io/badge/Netlify-Live-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://daawat-e-sahi.netlify.app)
-[![Vercel Status](https://img.shields.io/badge/Vercel-Live-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://daawat-e-shahi-sihm.vercel.app)
+[![Project Status](https://img.shields.io/badge/Status-Archived-lightgrey?style=for-the-badge)](https://github.com/mfscpayload-690/daawat-e-shahi-sihm)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-[View Live Site →](https://daawat-e-sahi.netlify.app)
-
 ---
 
 </div>
+
+## 📦 Project Status
+
+> [!IMPORTANT]
+> **Archived on February 12, 2026.**  
+> The SIHM Kozhikode grand feast has been successfully completed.  
+> Netlify and Vercel deployments have been turned off, and this repository is now kept as a historical reference.
+> See `ARCHIVE_NOTES.md` for complete archive details.
 
 ## 📖 Overview
 
@@ -76,12 +81,13 @@ daawat-e-shahi-sihm/
 
 ## 🚀 Deployment
 
-| Platform | Status | URL |
-|----------|--------|-----|
-| **Netlify** | [![Netlify](https://img.shields.io/badge/Live-Success-brightgreen?style=flat-square)](https://daawat-e-sahi.netlify.app) | [daawat-e-sahi.netlify.app](https://daawat-e-sahi.netlify.app) |
-| **Vercel** | [![Vercel](https://img.shields.io/badge/Live-Success-brightgreen?style=flat-square)](https://daawat-e-shahi-sihm.vercel.app) | [daawat-e-shahi-sihm.vercel.app](https://daawat-e-shahi-sihm.vercel.app) |
+This project has no active public deployment.
 
-*Both deployments auto-update on push to main branch*
+- Netlify deployment: disabled
+- Vercel deployment: disabled
+- Canonical reference: [GitHub repository](https://github.com/mfscpayload-690/daawat-e-shahi-sihm)
+
+To view locally, open `index.html` directly in a browser.
 
 ## 🛠️ Technology Stack
 
